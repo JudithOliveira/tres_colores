@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	padding: 20px;
+}
+h1{
+	font-weight: 400;
+	color: #ef4135;
+	background-color: rgba(255, 255, 255 , 0.7);
+	padding: 0 10px;
+}
+.biografia{
+	text-transform: lowercase;
+	color: #333;
+}
+.biografia::after{
+	content: " +";
+}
+h1 span{
+	color: #0050a4 ;
+}
+nav ul{
+	list-style: none;
+	display: flex;
+}
+nav li{
+	flex-grow: 1;
+}
+nav a{
+	display: block;
+	height: 100vh;
+	background: url("../img/blanco.jpg") no-repeat center;
+	background-size: cover;
+	font-weight: 500;
+	color: white;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-size: 8em;
+	position: relative;
+}
+nav a span{
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+}
+nav li:first-child a{
+	background-image: url("../img/azul.jpg");
+	color: #0050a4;
+}
+nav li:last-child a{
+	background-image: url("../img/rojo.jpg");
+	color: #ef4135;
+}
